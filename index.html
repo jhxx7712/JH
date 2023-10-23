@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>News Search</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles/styles.css') }}">
+</head>
+
+<body>
+    <form method="POST">
+        <div id="container">
+            <div id="search-form"> 
+                <form id="search-form" onsubmit="return search(event)">
+                    <div id="input-group">
+                        <input type="text" id="search-input" placeholder="URL입력..." name="url">
+                        <input type="submit" value="Summary">
+                    </div>
+                </form>
+            </div>
+
+            <div id="search-results">
+
+                <h2>Result</h2>
+                
+                <h3>{{summary}}</h3>
+
+                <p id="search-summary"></p>
+                <ul id="search-list"></ul>
+            </div>
+        </div>
+</form>
+
+</body>
+
+</html> 
