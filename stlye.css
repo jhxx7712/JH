@@ -1,0 +1,65 @@
+#container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh; /* 뷰포트의 높이와 같게 설정 */
+}
+
+#search-form {
+    width: 100%;
+	display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#input-group {
+	display: flex;
+	justify-content: space-between;
+	width: 60%;
+}
+
+input[type=text] {
+	padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    width: 70%;
+	margin-right: 10px;
+}
+
+input[type=submit] {
+	background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+	width: 30%;
+}
+
+input[type=submit]:hover {
+	background-color: #45a049;
+}
+
+
+#search-results {
+	display: flex;
+	flex-direction: column;
+	margin-top: 11px;
+	padding: 8px;
+	border: 2px solid #ccc;
+	border-radius: 11px;
+	width: 60%;
+	min-height: 427px;
+	margin-bottom: 10px;
+}
+
+h2 {
+	margin-bottom: 10px;
+}
+
+p {
+	margin-top: 0px;
+	font-size: 16px;
+	line-height: 1.5em;
+}
